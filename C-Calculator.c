@@ -23,5 +23,10 @@ int main(int argc, char *argv[])
 		break;
 		case '*': answer = valueOne * valueTwo;
 		break;
+		case '^': answer = pow(valueOne, valueTwo);
+		break;
+		case ' ': answer = sqtr(valueTwo);
+		break;
+		default: goto fail;
 	}
 }

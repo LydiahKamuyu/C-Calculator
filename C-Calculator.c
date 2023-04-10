@@ -27,6 +27,11 @@ int main(int argc, char *argv[])
 		break;
 		case ' ': answer = sqtr(valueTwo);
 		break;
-		default: goto fail;
+		default: printf("Invalid");
+		
 	}
+
+	printf("%.9g %c %.9g = %.6g\n", valueOne, operator, valueTwo, answer);
+	
+	return 0;
 }
